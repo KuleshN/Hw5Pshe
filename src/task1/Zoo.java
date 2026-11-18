@@ -4,10 +4,14 @@ public class Zoo {
     Animal animal1;
     boolean animalInZoo = false;
 
-    public boolean addedAnimal(Animal animal){
-        animal1 = animal;
-        return animalInZoo = true;
-
+    public boolean addedAnimal(Animal animal) {
+        if (animalInZoo == false) {
+            animal1 = animal;
+            animalInZoo = true;
+        } else {
+            System.out.println("Уже есть одно животное удали его");
+        }
+        return false;
     }
     public boolean deleteAnimal(){
         return animalInZoo = false;

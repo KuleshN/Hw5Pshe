@@ -36,5 +36,7 @@ public class Main {
         osaka1.demonstareAnimal();
         osaka1.addedAnimal(bird);
         osaka1.demonstareAnimal();
+        osaka1.addedAnimal(dambo);
+        osaka1.demonstareAnimal();
     }
 }
